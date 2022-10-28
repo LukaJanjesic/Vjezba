@@ -2,22 +2,55 @@ package JAVA;
 import java.util.Scanner;
 public class Kalkulator {
       public static void main (String args[]) {
-    	  Scanner prvi = new Scanner (System.in);
-    	  double fnum, snum, tnum, lnum, answer;
-    	 System.out.println("Enter fisrt num");
-    	 fnum = prvi.nextDouble();
+    	  
+          char operator;
+    	  double number1, number2, number3, number4, result;
+    	  
+    	 Scanner prvi = new Scanner (System.in);
+    	 
+    	 System.out.println("Choose an operator: +,-,* or /");
+    	 operator = prvi.next().charAt(0);
+    	 
+    	 System.out.println("Enter first num");
+    	 number1 = prvi.nextDouble();
     	 
     	 System.out.println("Enter second num");
-    	 snum = prvi.nextDouble();
+    	 number2 = prvi.nextDouble();
     	 
     	 System.out.println("Enter third num");
-    	 tnum = prvi.nextDouble();
+    	 number3 = prvi.nextDouble();
     	 
     	 System.out.println("Enter fourth num");
-    	 lnum = prvi.nextDouble();
+    	 number4 = prvi.nextDouble();
     	 
-    	 answer = (fnum + snum) *(-fnum)*(tnum -lnum);
-    	 System.out.println("Answer is "+ answer);
+    	 switch (operator) {
+
+         case '+':
+           result = number1 + number2 + number3 + number4 ;
+           System.out.println(number1 + " + " + number2 + " + " + number3 + " + " + number4 + " = " + result);
+           break;
+
+         case '-':
+           result = number1 - number2 - number3 - number4;
+           System.out.println(number1 + " - " + number2 + " - " + number3 + " - " + number4 + " = " + result);
+           break;
+
+         case '*':
+           result = number1 * number2 * number3 * number4;
+           System.out.println(number1 + " * " + number2 + " * " + number3 + " * " + number4 + " = " + result);
+           break;
+
+         case '/':
+           result = number1 / number2 / number3 / number4;
+           System.out.println(number1 + " / " + number2 + " / " + number3 + " / " + number4  + " = " + result);
+           break;
+
+         default:
+           System.out.println("Invalid operator!");
+           break;
+       } 	 
+    	 
+    	prvi.close();
     	 
       }
 }
