@@ -1,16 +1,8 @@
 package JAVA;
 
 public class Lion extends Mesojedi {
-	public Lion(String cn) {
-		super(cn);
-		
-	}
-	public static void main (String[] args) {
-		Mesojedi cn= new Mesojedi (Classname);
-		System.out.println(Mesojedi.Classname());
-		
-		
-		
+	public void Name() {
+		System.out.println("Liotard the Lion");
 	}
 	public void Food() {
 		System.out.println("Meat");

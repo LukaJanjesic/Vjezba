@@ -1,6 +1,9 @@
 package JAVA;
 
 public class Biljojedi extends Animals {
+	public void Name() {
+		System.out.println("Name the animal");
+	}
 	public void Food() {
 		System.out.println("Wheat, Grass, Fruit");
 	}

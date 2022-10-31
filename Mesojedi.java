@@ -1,16 +1,13 @@
 package JAVA;
 
 public class Mesojedi extends Animals {
-	private static String Classname;
-	public Mesojedi (String cn) {
-		Classname=cn;
-		System.out.printf("");
+	
+	
 		
-		}
-		public static String Classname () {
-			return Classname;
-		}
 		
+	public void Name() {
+		System.out.println("Name the animal");
+	}
 	public void Food() {
 		System.out.println("Meat");
 	}

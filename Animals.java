@@ -1,6 +1,9 @@
 package JAVA;
 
 public class Animals {
+	public void Name() {
+		System.out.println("Name the animal");
+	}
 	public void Food() {
 		System.out.println("Feed them with");
 	}

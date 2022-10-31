@@ -1,6 +1,9 @@
 package JAVA;
 
 public class Zebra extends Biljojedi {
+	public void Name() {
+		System.out.println("Zuko the Zebra");
+	}
 	public void Food() {
 		System.out.println("Wheat and Grass");
 	}
